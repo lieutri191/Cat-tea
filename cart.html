@@ -2,63 +2,46 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Giỏ Hàng - Cat-Tea</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
+  <header>
     <img src="img/logo.png" alt="Cat-Tea Logo" class="logo">
     <h1>Cat-Tea Milk Tea</h1>
-  <nav>
-    <a href="index.html">Trang Chủ</a>
-    <a href="login.html">Đăng Nhập</a>
-    <a href="register.html">Đăng Ký</a>
-    <a href="cart.html">Giỏ Hàng</a>
-  </nav>
-</header>
+    <h1>Giỏ Hàng</h1>
+    <nav>
+      <a href="index.html">Trang Chủ</a>
+      <a href="product.html">Sản Phẩm</a>
+      <a href="cart.html">Giỏ Hàng</a>
+      <a href="login.html">Đăng Nhập</a>
+    </nav>
+  </header>
 
-<div class="container cart-page">
-  <h2>Giỏ Hàng Của Bạn</h2>
+  <div class="container">
+    <h2>Sản phẩm trong giỏ hàng</h2>
 
-  <table class="cart-table">
-    <thead>
-      <tr>
-        <th>Sản Phẩm</th>
-        <th>Giá</th>
-        <th>Số Lượng</th>
-        <th>Thành Tiền</th>
-        <th>Hành Động</th>
-      </tr>
-    </thead>
-    <tbody id="cart-items">
-      <tr>
-        <td>Trà Sữa Truyền Thống</td>
-        <td>35.000đ</td>
-        <td><input type="number" value="1" min="1"></td>
-        <td>35.000đ</td>
-        <td><button class="remove-btn">Xóa</button></td>
-      </tr>
-      <tr>
-        <td>Trà Trái Cây</td>
-        <td>40.000đ</td>
-        <td><input type="number" value="2" min="1"></td>
-        <td>80.000đ</td>
-        <td><button class="remove-btn">Xóa</button></td>
-      </tr>
-    </tbody>
-  </table>
+    <table>
+      <thead>
+        <tr>
+          <th>Tên sản phẩm</th>
+          <th>Giá</th>
+          <th>Số lượng</th>
+          <th>Hành động</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items">
+        <!-- Các sản phẩm sẽ được script thêm vào đây -->
+      </tbody>
+    </table>
 
-  <div class="cart-summary">
-    <h3>Tổng Cộng: <span id="total-price">115.000đ</span></h3>
-    <button onclick="location.href='checkout.html'" class="checkout-btn">Thanh Toán</button>
+    <p><strong>Tổng tiền: <span id="total-price">0đ</span></strong></p>
+    <button onclick="location.href='checkout.html'">Thanh Toán</button>
   </div>
-</div>
 
-<footer>
-  <p>© 2024 CAT-TEA. All rights reserved.</p>
-</footer>
+  <footer>
+    &copy; 2025 Cat-Tea
+  </footer>
 
   <script src="script.js" defer></script>
 </body>
