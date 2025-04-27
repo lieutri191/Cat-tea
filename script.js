@@ -1,10 +1,5 @@
 // script.js
-
-function addToCart(productName) {
-    alert(productName + " đã thêm vào giỏ hàng!");
-  }
-
-  /* --- Slide khuyến mãi --- */
+ /* --- Slide khuyến mãi --- */
   const slide = document.querySelector('.promo-slide');
   const images = document.querySelectorAll('.promo-img');
   const nextBtn = document.querySelector('.next-btn');
@@ -52,6 +47,10 @@ function addToCart(productName) {
     });
     startAutoSlide();
   }
+function addToCart(productName) {
+    alert(productName + " đã thêm vào giỏ hàng!");
+  }
+
 
 /* giỏ hàng */
 document.addEventListener("DOMContentLoaded", function() {
