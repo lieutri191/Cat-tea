@@ -155,3 +155,41 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
   
+/* khuyến mãi*/
+  .promo-slider {
+    position: relative;
+    width: 15%;
+    margin: 40px auto;
+    overflow: hidden;
+  }
+  
+  .promo-slide {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .promo-img {
+    width: 100%;
+    flex-shrink: 0;
+  }
+  
+  .prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
