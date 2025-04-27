@@ -1,0 +1,151 @@
+/* style.css - Cat-Tea tone màu */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fef9f4; /* nền be sáng */
+    color: #5c4033; /* nâu đậm */
+  }
+  
+  header, footer {
+    background-color: #8b5e3c; /* nâu trung tính */
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-bottom: 5px solid #c49e6c; /* viền nhạt */
+  }
+  
+  nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h1, h2, h3 {
+    color: #8b5e3c; /* nâu trung tính */
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"],
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: 2px solid #c49e6c;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  
+  button {
+    background-color: #d08c60; /* màu nâu nhạt */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  button:hover {
+    background-color: #b37049;
+  }
+  
+  .product {
+    border: 2px solid #d08c60;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .product-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .product-detail {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 3rem;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+  /* s */
+  .detail-image img {
+    width: 360px;
+    max-width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  }
+  
+  .detail-info {
+    max-width: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  
+  .detail-info h2 {
+    font-size: 2rem;
+    color: #222;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .detail-info .price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2e7d32;
+    margin: 1rem 0;
+  }
+  
+  .detail-info p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .detail-info button {
+    background-color: #4caf50;
+    color: white;
+    padding: 0.9rem 2rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .detail-info button:hover {
+    background-color: #388e3c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
