@@ -21,7 +21,13 @@ body {
     color: #fff;
     font-weight: bold;
   }
-  
+.logo {
+    width: 100px; /* nhỏ lại vừa phải, có thể chỉnh thành 120px hoặc 180px tùy thích */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* căn giữa */
+    padding-top: 16px; /* khoảng cách trên nếu cần */
+  }
   .container {
     padding: 2rem;
     max-width: 800px;
