@@ -176,19 +176,31 @@ body {
     flex-shrink: 0;
   }
   
+/* Bình thường trên laptop */
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #d08c60;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+/* Khi màn hình nhỏ hơn 768px (điện thoại, tablet) */
+@media (max-width: 768px) {
   .prev-btn, .next-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 90%; /* đẩy nút xuống dưới ảnh */
+    font-size: 1.5rem; /* thu nhỏ nút lại */
+    padding: 6px 10px;
+    transform: translateY(0);
     background-color: #d08c60;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    padding: 8px 12px;
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
   }
-  
+}
+
   .prev-btn {
     left: 10px;
   }
